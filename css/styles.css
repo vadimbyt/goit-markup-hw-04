@@ -9,7 +9,7 @@
     --accent-text-color: #212121;
     --sub-text-color: #757575;
     --portfolio-btn-color: #F5F4FA;
-
+    --pec-container-color: #f5f4fa;
 }
 
 body {
@@ -233,6 +233,28 @@ img {
 
 .peculiarities {
 }
+
+.peculiarities-icon-list {
+    display: flex;
+}
+
+.peculiarities-icon-antenna {
+    background: url(../images/antenna.svg);
+}
+
+.peculiarities-icon-container {
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: var(--pec-container-color);
+    margin-bottom: 30px;
+}
+
+.peculiarities-icon-container:not(:last-child) {
+    margin-right: 30px;
+}
+
+
 
 .peculiarities-list {
     display: flex;
