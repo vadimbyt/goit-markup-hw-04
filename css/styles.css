@@ -238,23 +238,41 @@ img {
     display: flex;
 }
 
-.peculiarities-icon-antenna {
-    background: url(../images/antenna.svg);
-}
-
 .peculiarities-icon-container {
-    width: 270px;
-    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 270px;
+    min-height: 120px;
     border-radius: 4px;
     background-color: var(--pec-container-color);
     margin-bottom: 30px;
+    
 }
 
 .peculiarities-icon-container:not(:last-child) {
     margin-right: 30px;
 }
 
+.antenna {
+    width: 70px;
+    height: 70px;
+}
 
+.clock{
+    width: 70px;
+    height: 70px;
+}
+
+.diagram{
+    width: 70px;
+    height: 70px;
+}
+
+.astronaut{
+    width: 70px;
+    height: 70px;
+}
 
 .peculiarities-list {
     display: flex;
@@ -345,13 +363,28 @@ img {
     line-height: 1.18;
     color: var(--sub-text-color);
     margin-top: 10px;
-    margin-bottom: 30px;
 }
 
 .team-box {
     background-color: var(--accent-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.team-inst,
+.team-twitter,
+.team-facebook,
+.team-linkedin {
+    width: 44px;
+    height: 44px;
 }
 
 
