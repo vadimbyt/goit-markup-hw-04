@@ -385,6 +385,18 @@ img {
 .team-linkedin {
     width: 44px;
     height: 44px;
+    cursor: pointer;
+}
+
+.team-logo-inst:hover,
+.team-logo-twitter:hover,
+.team-logo-facebook:hover,
+.team-logo-linkedin:hover,
+.team-logo-inst:focus,
+.team-logo-twitter:focus,
+.team-logo-facebook:focus,
+.team-logo-linkedin:focus{
+    fill: #000;
 }
 
 
