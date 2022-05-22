@@ -515,6 +515,33 @@ img {
     margin-top: 20px;
 }
 
+.join {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1.14em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+}
+
+.f-social-list {
+    display: flex;
+}
+
+.f-social-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.f-social-link {
+    display: flex;
+}
+
+.f-social-icon {
+    fill: currentColor;
+    width: 44px;
+    height: 44px;
+}
+
 
 
 
