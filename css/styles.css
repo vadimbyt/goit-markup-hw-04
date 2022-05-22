@@ -10,6 +10,7 @@
     --sub-text-color: #757575;
     --portfolio-btn-color: #F5F4FA;
     --pec-container-color: #f5f4fa;
+    --social-link: #afb1b8;
 }
 
 body {
@@ -168,7 +169,16 @@ img {
     color: var(--accent-second-color);
 }
 
+.contact-icon-mail:hover,
+.contact-icon-mail:focus,
+.contact-icon-phone:hover,
+.contact-icon-phone:focus {
+    fill: var(--accent-second-color);
+}
+
 .header-contact {
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
     font-weight: 500;
@@ -177,6 +187,19 @@ img {
     color: var(--sub-text-color);
 }
 
+.contact-icon-mail {
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+    fill: currentColor;
+}
+
+.contact-icon-phone {
+    margin-right: 10px;
+    width: 10px;
+    height: 16px;
+    fill: currentColor;
+}
 
 
 /*-------------------HERO-------------------*/
@@ -379,40 +402,80 @@ img {
     margin-top: 16px;
 }
 
-.team-button-icon:hover {
+.team-button-icon:hover,
+.team-button-icon:focus {
     background-color: #188ce8
-}
-
-.team-button-icon:hover .team-social-icon {
-    fill: #fff;
-}
-
-.team-social-icon {
-    fill: currentColor;
-}
-
-.team-button-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    padding: 0;
-    border: none;
-    color: #afb1b8;
-    border-radius: 50%;
-    background-color: #fff;
 }
 
 .team-social-item:not(:last-child) {
     margin-right: 10px;
 }
 
+.team-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+    background-color: var(--accent-second-color);
+}
+
+.team-social-icon:hover,
+.team-social-icon:focus {
+    fill: #ffffff;
+}
+
 .team-social-icon {
+    fill: var(--social-link);
     width: 44px;
     height: 44px;
 }
 
+
+/* -------------------CLIENTS------------------- */
+
+
+.client-list {
+    display: flex;
+}
+
+
+
+.client-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.client-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.client:hover, 
+.client-link:hover {
+    fill: var(--accent-second-color-color);
+    border-color: #2196f3;
+}
+
+.client {
+    fill: #afb1b8;
+    width: 106px;
+    height: 60px;
+}
+
+.client:hover,
+.client:focus {
+    fill: var(--accent-second-color);
+}
 
 
 /*-------------------FOOTER-------------------*/
