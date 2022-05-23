@@ -441,11 +441,18 @@ img {
 /* -------------------CLIENTS------------------- */
 
 
+.client-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
 .client-list {
     display: flex;
 }
-
-
 
 .client-item:not(:last-child) {
     margin-right: 30px;
@@ -487,6 +494,15 @@ img {
     background-color: var(--footer-bg-color);
 }
 
+.footer-info {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-social {
+    margin-left: 70px;
+}
+
 .footer-item:not(:last-child) {
     margin-bottom: 9px;
 }
@@ -519,13 +535,14 @@ img {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-    letter-spacing: 1.14em;
+    letter-spacing: 1.14;
     text-transform: uppercase;
     color: var(--accent-color);
 }
 
 .f-social-list {
     display: flex;
+    margin-top: 20px;
 }
 
 .f-social-item:not(:last-child) {
@@ -534,12 +551,22 @@ img {
 
 .f-social-link {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .f-social-icon {
-    fill: currentColor;
     width: 44px;
     height: 44px;
+}
+
+.f-social-link:hover,
+.f-social-link:focus {
+    background-color: var(--accent-second-color);
 }
 
 
