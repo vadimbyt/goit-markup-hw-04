@@ -206,8 +206,10 @@ img {
 
 
 .hero {
+    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    margin: 0 auto;
     text-align: center;
     background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
@@ -363,14 +365,17 @@ img {
 
 .team-list {
     display: flex;
-
 }
 
 .team-item {
     text-align: center;
+    background-color: var(--accent-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    
 }
 
-.team-list .team-box + .team-box {
+.team-list .team-item + .team-item {
     margin-left: 30px;
 }
 
@@ -388,18 +393,12 @@ img {
     margin-top: 10px;
 }
 
-.team-box {
-    background-color: var(--accent-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    padding-bottom: 30px;
-}
-
 .social-list {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 16px;
+    margin-bottom: 30px;
 }
 
 .team-button-icon:hover,
@@ -458,11 +457,17 @@ img {
     margin-right: 30px;
 }
 
+.client-item {
+    width: 170px;
+    height: 92px;
+}
+
 .client-link {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 16px 32px;
+    width: 100%;
+    height: 100%;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
@@ -617,9 +622,8 @@ img {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.project:hover,
-.project:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.project-link:hover, .project-link:focus {
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%), 1px 4px 6px rgb(0 0 0 / 16%);
 }
 
 .projects-list {
@@ -627,8 +631,14 @@ img {
     flex-wrap: wrap;
 }
 
+.project-link {
+    display: block;
+    text-decoration: none;
+}
+
 .project {
     width: 370px;
+
 }
 
 .project-info {
