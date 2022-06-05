@@ -275,7 +275,7 @@ img {
     
 }
 
-.peculiarities-icon-container:not(:last-child) {
+.peculiarities-icon:not(:last-child) {
     margin-right: 30px;
 }
 
